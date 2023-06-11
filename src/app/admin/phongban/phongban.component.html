@@ -1,74 +1,108 @@
 <div id="wrapper">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="/Admin">Trang quản trị</a>
-        </div>
-
-       
+  <!-- Navigation -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/Admin">Trang quản trị</a>
+    </div>
 
 
-        <ul _ngcontent-kvi-c9="" class="nav navbar-nav navbar-right">
-            <li _ngcontent-kvi-c9=""><a _ngcontent-kvi-c9="" routerlink="dang-nhap" ng-reflect-router-link="dang-nhap" href="/dang-nhap"></a></li></ul>
-       <ul class="nav navbar-right top-nav">
-        
-              
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Đăng xuất</a>
-                        </li>
-                    </ul>
-           
-        <!-- /.navbar-top-links -->
-    </nav>
-   
- 
-    <aside class="sidebar navbar-default" role="navigation" style="
+
+
+    <ul _ngcontent-kvi-c9="" class="nav navbar-nav navbar-right">
+      <li _ngcontent-kvi-c9=""><a _ngcontent-kvi-c9="" routerlink="dang-nhap" ng-reflect-router-link="dang-nhap"
+          href="/dang-nhap"></a></li>
+    </ul>
+    <ul class="nav navbar-right top-nav">
+
+
+      <li>
+        <a href="#"><i class="fa fa-fw fa-power-off"></i> Đăng xuất</a>
+      </li>
+    </ul>
+
+    <!-- /.navbar-top-links -->
+  </nav>
+
+
+  <aside class="sidebar navbar-default" role="navigation" style="
     margin-top: 0px;">
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav side-nav" id="activeMenu">
-            <li class="active">
-                <a href="/Admin"><i class="fa fa-fw fa-dashboard"></i> Tổng quan</a>
-            </li>
-            <li>
-                <a href="/nhan-vien"><i class="fa fa-fw fa-user"></i> Nhân Viên</a>
-            </li>
-            <li>
-                <a href="/phong-ban"><i class="fa fa-tasks"></i> Phòng ban</a>
-            </li>
-            <li>
-                <a href="/luong"><i class="fa fa-money"></i> Lương nhân viên</a>
-            </li>
-            
-            
-        </ul>
-    </div></aside>
-               
- 
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav" id="activeMenu">
+        <li class="active">
+          <a href="/Admin"><i class="fa fa-fw fa-dashboard"></i> Tổng quan</a>
+        </li>
+        <li>
+          <a href="/nhan-vien"><i class="fa fa-fw fa-user"></i> Nhân Viên</a>
+        </li>
+        <li>
+          <a href="/phong-ban"><i class="fa fa-tasks"></i> Phòng ban</a>
+        </li>
+        <li>
+          <a href="/luong"><i class="fa fa-money"></i> Lương nhân viên</a>
+        </li>
 
-<div class="row" style=" margin: 15px 60px 60px 15px; width: auto ; ">
-   
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Phòng ban</h1>
-                        <ol class="breadcrumb">
-                            <li>
-                                <i class="fa fa-tasks"></i> <a href="/Admin">Tổng quan</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-user"></i> 
-                                Phòng ban
-                            </li>
-                        </ol>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
-                
-    
-</div>
-</div>     
 
-       
+      </ul>
+    </div>
+  </aside>
+
+
+
+  <div class="row" style=" margin: 15px 60px 60px 15px; width: auto ; ">
+
+    <div id="page-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <h1 class="page-header">Phòng ban</h1>
+            <ol class="breadcrumb">
+              <li>
+                <i class="fa fa-dashboard"></i> <a href="/Admin">Tổng quan</a>
+              </li>
+              <li>
+                <i class="fa fa-tasks"></i>
+                Phòng ban
+              </li>
+            </ol>
+          </div>
+          <!-- /.col-lg-12 -->
+        </div>
+        <!-- /.row -->
+        <td>
+          <a href="phong-ban/add" class="btn btn-sm btn-info">Thêm phòng ban</a>
+
+        </td>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>STT</th>
+              <th>Mã Phong ban</th>
+              <th>Tên phòng ban</th>
+              <th>Sdt</th>
+              <th>Địa chỉ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let s of phongbans; let i = index ">
+              <td scope="row">{{i +1}}</td>
+              <td>{{s.id}}</td>
+              <td>{{s.name}}</td>
+              <td>{{s.sdt}}</td>
+              <td>{{s.diachi}}</td>
+              <td>
+                <a href="phong-ban/view" class="btn btn-sm btn-info">Xem thông tin</a>
+                <a href="phong-ban/edit" class="btn btn-sm btn-primary">Sửa</a>
+                <a href="javascrip:void(o)" class="btn btn-sm btn-danger" (click)="onDelete(s.id)">Xóa</a>
+
+              </td>
+            </tr>
+            <td></td>
+            <td></td>
+          </tbody>
+
+        </table>
+
+      </div>
+    </div>

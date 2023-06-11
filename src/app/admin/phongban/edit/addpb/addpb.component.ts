@@ -1,19 +1,28 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
 import { PhongbanService } from 'src/app/services/phongban.service';
 
 
 @Component({
-  selector: 'app-phongban',
-  templateUrl: './phongban.component.html',
-  styleUrls: ['./phongban.component.css']
+  selector: 'app-addpb',
+  templateUrl: './addpb.component.html',
+  styleUrls: ['./addpb.component.css']
 })
-export class PhongbanComponent implements OnInit {
+export class AddpbComponent implements OnInit {
   
   phongbans:any;
+  addForm = this.fb.group({
+    id: '',
+    name: '',
+    sdt: '',
+    diachi:'',
+  })
+
    constructor(
      private phongban:PhongbanService,
-     private router: Router          
+     private router: Router  ,
+     private fb : FormBuilder        
      ){}
  
    getAll(){
@@ -38,9 +47,11 @@ export class PhongbanComponent implements OnInit {
      
    }
  
-   public addnhanvien(){
-     this.router.navigate(['/nhan-vien/add']);
-   }
- 
+   onSubmit(){
+    console.log(this.addForm.value);
+    this.phongban.add(this.addForm.value).subscribe(res => {
+      this.getAll();
+    })
+  }
  }
  

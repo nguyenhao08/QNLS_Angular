@@ -1,0 +1,245 @@
+<div id="wrapper">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="/Admin">Trang quản trị</a>
+        </div>
+
+        
+
+
+        <ul _ngcontent-kvi-c9="" class="nav navbar-nav navbar-right">
+            <li _ngcontent-kvi-c9=""><a _ngcontent-kvi-c9="" routerlink="dang-nhap" ng-reflect-router-link="dang-nhap" href="/dang-nhap"></a></li></ul>
+       <ul class="nav navbar-right top-nav">
+        
+              
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Đăng xuất</a>
+                        </li>
+                    </ul>
+           
+        <!-- /.navbar-top-links -->
+    </nav>
+   
+ 
+    <aside class="sidebar navbar-default" role="navigation" style="
+    margin-top: 0px;">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav side-nav" id="activeMenu">
+            <li class="active">
+                <a href="/Admin"><i class="fa fa-fw fa-dashboard"></i> Tổng quan</a>
+            </li>
+            <li>
+                <a href="/nhan-vien"><i class="fa fa-fw fa-user"></i> Nhân Viên</a>
+            </li>
+            <li>
+                <a href="/phong-ban"><i class="fa fa-tasks"></i> Phòng ban</a>
+            </li>
+            <li>
+                <a href="/luong"><i class="fa fa-money"></i> Lương nhân viên</a>
+            </li>
+            
+            
+        </ul>
+    </div></aside>
+               
+ 
+
+<div class="row" style=" margin: 15px 60px 60px 15px; width: auto ; ">
+   
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">Thêm nhân viên</h1>
+                        <ol class="breadcrumb">
+                            <li>
+                                <i class="fa fa-dashboard"></i> <a href="/Admin">Tổng quan</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-user"></i> <a href="/nhan-vien">Nhân viên</a>
+                                
+                            </li>
+                            <li>
+                                <i class="fa fa-user"></i>
+                                Sửa nhân viên
+                                
+                            </li>
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+               
+             
+
+                      
+                   
+                        <form action="" [formGroup]="addForm" class="form-horizontal" method="post" (submit)="onSubmit" >
+    
+                           
+                        
+                            
+                            
+                        
+                            
+                            <div class="form-group">
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Mã nhân viên</label>
+                                </div>
+                        
+                                <div class="col-md-4 col-sm-8">
+                                    <input type="text" name="MaNhanVien" class="form-control" formControlName="id"  placeholder="Nhập mã nhân viên" fdprocessedid="mezms" required pattern="\S+" >
+                                
+                                </div>
+                                <div class=" col-md-offset-5 col-sm-offset-4 col-sm-5" style="height:15px">
+                                    <label class="control-label text-danger">
+                                        
+                                        <span class="field-validation-valid" data-valmsg-for="MaNhanVien" data-valmsg-replace="true"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <!---start-->
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Họ tên</label>
+                                </div>
+                        
+                                <div class="col-md-4 col-sm-8">
+                                    <input type="text" name="HoTen" class="form-control" formControlName="name" placeholder="Nhập tên nhân viên"  fdprocessedid="w1e9hq">
+                                </div>
+                                
+                                <div class=" col-md-offset-5 col-sm-offset-4 col-sm-5" style="height:15px">
+                                    <label class="control-label text-danger">
+                                        <span class="field-validation-valid" data-valmsg-for="HoTen" data-valmsg-replace="true"></span>
+                                    </label>
+                                </div>
+                                    <!---end--->
+                                </div>
+                                <div class="form-group">
+                                    <!---start-->
+                                    <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                        <label>Ngày sinh</label>
+                                    </div>
+                            
+                                    <div class="col-md-4 col-sm-8">
+                                        <input type="date" name="birthday" class="form-control" formControlName="birthday"   fdprocessedid="w1e9hq">
+                                    </div>
+                                    
+                                    <div class=" col-md-offset-5 col-sm-offset-4 col-sm-5" style="height:15px">
+                                        <label class="control-label text-danger">
+                                            <span class="field-validation-valid" data-valmsg-for="HoTen" data-valmsg-replace="true"></span>
+                                        </label>
+                                    </div>
+                                        <!---end--->
+                                    </div>
+                            
+                            <div class="form-group">
+                                <!---start-->
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Giới tính</label>
+                                </div>
+                        
+                                <div class="col-md-4 col-sm-8">
+                                    <div class="radio-inline">
+                                        <label><input type="radio" name="gender"  formControlName="gender" value="Nam" checked="">Nam</label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label><input type="radio" name="gender"  formControlName="gender" value="Nữ" checked="">Nữ</label>
+                                    </div>
+                                    <div class="radio-inline">
+                                        <label><input type="radio" name="gender" formControlName="gender" value="Khác" checked="">Khác</label>
+                                    </div>
+                                </div>
+                        
+                                <!---end--->
+                        
+                            </div>
+                           
+                            
+                            <div class="form-group">
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Chức vụ</label>
+                                </div>
+                                <div class="col-md-4 col-sm-8">
+                        
+                                    <select name="chucvu" class="form-control" formControlName="chucvu">
+                                        <option value="nv" selected="">Nhân viên</option>
+                                        <option value="pp" selected="">Phó phòng, Phó khoa</option>
+                                        <option value="tbm" selected="">Trưởng bộ môn</option>
+                                        <option value="tp" selected="">Trưởng phòng, Trưởng khoa</option>
+                                    </select>
+                        
+                                    <span class="field-validation-valid" data-valmsg-for="MaChucVuNV" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Phòng ban</label>
+                                </div>
+                                <div class="col-md-4 col-sm-8">
+                        
+                                    <select name="MaPhongBan" class="form-control" formControlName="phongban">
+                                        <option value="cntt" selected="phongban">Công nghệ thông tin</option>
+                                        <option value="qtkd" selected="phongban">Quản Trị Kinh Doanh</option>
+                                        
+                                    </select>
+                                    <span class="field-validation-valid" data-valmsg-for="MaPhongBan" data-valmsg-replace="true"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Chuyên ngành</label>
+                                </div>
+                                <div class="col-md-4 col-sm-8">
+                        
+                                    <select name="chuyennganh" class="form-control" formControlName="chuyennganh">
+                                        <option value="cntt" selected="">Công nghệ thông tin</option>
+                                        <option value="dientu" selected="">Điện tử</option>
+                                        <option value="hoahoc" selected="">Hóa học</option>
+                                        <option value="kh" selected="">Khác</option>
+                                        <option value="kho" selected="">Không</option>
+                                        <option value="kt" selected="">Kế toán</option>
+                                        <option value="toan" selected="">Toán</option>
+                                        <option value="cth" selected="">Chính trị học</option>
+                                    </select>
+                        
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="control-label col-md-offset-1 col-md-4 col-sm-4">
+                                    <label>Trình độ học vấn</label>
+                                </div>
+                                <div class="col-md-4 col-sm-8">
+                        
+                                    <select name="hocvan" class="form-control" formControlName="hocvan">
+                                        <option value="dh" selected="">Đại Học</option>
+                                        <option value="c2" selected="">THCS</option>
+                                        <option value="ts" selected="">Tiến Sĩ</option>
+                                        <option value="ths" selected="">Thạc sỹ</option>
+                                        <option value="c3" selected="">THPT</option>
+                                    </select>
+                                </div>
+                            </div> 
+                           
+                       
+                               
+                            <div class="form-group">
+                                <div class=" col-md-offset-5 col-sm-offset-4 col-sm-5">
+                                    <a href="/nhan-vien" class="btn btn-sm btn-primary" (click)="onSubmit()"  > Lưu</a>
+                                </div>
+                            </div>
+                        
+                        </form>
+                   
+                        
+        
+    
+</div>
+</div>     
+
+       

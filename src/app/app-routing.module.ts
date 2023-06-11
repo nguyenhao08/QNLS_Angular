@@ -8,6 +8,12 @@ import { AdminpageComponent } from './components/adminpage/adminpage.component';
 import { NhanvienComponent } from './admin/nhanvien/nhanvien.component';
 import { PhongbanComponent } from './admin/phongban/phongban.component';
 import { QuanlyluongComponent } from './admin/quanlyluong/quanlyluong.component';
+import { AddComponent } from './admin/nhanvien/edit/add/add.component';
+import { EditComponent } from './admin/nhanvien/edit/edit/edit.component';
+import { AddpbComponent } from './admin/phongban/edit/addpb/addpb.component';
+import { EditpbComponent } from './admin/phongban/edit/editpb/editpb.component';
+import { ViewComponent } from './admin/nhanvien/edit/view/view.component';
+import { ViewpbComponent } from './admin/phongban/edit/viewpb/viewpb.component';
 
 const routes: Routes = [
   {path:'', component:HomeimgComponent},
@@ -17,6 +23,13 @@ const routes: Routes = [
   {path:'nhan-vien',component:NhanvienComponent},
   {path:'phong-ban',component:PhongbanComponent},
   {path:'luong',component:QuanlyluongComponent},
+  {path:'nhan-vien/add',component:AddComponent},
+  {path:'nhan-vien/edit/:id',component:EditComponent},
+  {path:'nhan-vien/view/:id',component:ViewComponent},
+  {path:'phong-ban/add', component:AddpbComponent },
+  {path:'phong-ban/edit', component:EditpbComponent },
+  {path:'phong-ban/view', component:ViewpbComponent },
+ 
   {path:'**', component:NotfoundComponent},
 
 ];

@@ -12,6 +12,13 @@ import { AdminpageComponent } from './components/adminpage/adminpage.component';
 import { NhanvienComponent } from './admin/nhanvien/nhanvien.component';
 import { PhongbanComponent } from './admin/phongban/phongban.component';
 import { QuanlyluongComponent } from './admin/quanlyluong/quanlyluong.component';
+import { AddComponent } from './admin/nhanvien/edit/add/add.component';
+import { EditComponent } from './admin/nhanvien/edit/edit/edit.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AddpbComponent } from './admin/phongban/edit/addpb/addpb.component';
+import { EditpbComponent } from './admin/phongban/edit/editpb/editpb.component';
+import { ViewComponent } from './admin/nhanvien/edit/view/view.component';
+import { ViewpbComponent } from './admin/phongban/edit/viewpb/viewpb.component';
 
 @NgModule({
   declarations: [
@@ -24,12 +31,20 @@ import { QuanlyluongComponent } from './admin/quanlyluong/quanlyluong.component'
         AdminpageComponent,
         NhanvienComponent,
         PhongbanComponent,
-        QuanlyluongComponent
+        QuanlyluongComponent,
+        AddComponent,
+        EditComponent,
+        AddpbComponent,
+        EditpbComponent,
+        ViewComponent,
+        ViewpbComponent,
+        
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [HomeComponent]
