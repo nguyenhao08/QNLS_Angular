@@ -61,6 +61,8 @@
                 <i class="fa fa-money"></i>
                 Quản lý lương
               </li>
+              
+              
             </ol>
           </div>
           <!-- /.col-lg-12 -->
@@ -80,14 +82,14 @@
               <td scope="row">{{ i + 1 }}</td>
               <td>{{ s.id }}</td>
               <td>{{ s.name }}</td>
-              <td>{{ s.luong * s.id }}</td>
+              <td>{{ s.tongluong }}</td>
               <td>
-                <button>Tính lương</button>
-                <a routerLink="view/{{ s.id }} " class="btn btn-sm btn-info"
+              
+                <a routerLink="tinh-luong/{{s.id}}" class="btn btn-sm btn-info"
                   >Tính lương</a
                 >
-                <a routerLink="edit/{{ s.id }}" class="btn btn-sm btn-primary"
-                  >Sửa</a
+                <a routerLink="edit-luong/{{ s.id }}" class="btn btn-sm btn-primary"
+                  >Sửa lương</a
                 >
               </td>
             </tr>

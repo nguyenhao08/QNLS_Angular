@@ -1,0 +1,117 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "nhan-vien": [
+    {
+      "id": "01",
+      "name": "Võ Nguyên Hào",
+      "birthday": "2023-06-05",
+      "gender": "Nam",
+      "chucvu": "pp",
+      "phongban": "cntt",
+      "chuyennganh": "dientu",
+      "hocvan": "ts"
+    },
+    {
+      "id": "02",
+      "name": "Hao",
+      "birthday": "2023-06-08",
+      "gender": "Nam",
+      "chucvu": "nv",
+      "phongban": "cntt",
+      "chuyennganh": "cntt",
+      "hocvan": "dh"
+    },
+    {
+      "id": "03",
+      "name": "Thái An",
+      "birthday": "2023-06-21",
+      "gender": "Khác",
+      "chucvu": "nv",
+      "phongban": "cntt",
+      "chuyennganh": "cntt",
+      "hocvan": "dh"
+    },
+    {
+      "id": "04",
+      "name": "Đức Huy",
+      "birthday": "2023-06-19",
+      "gender": "Nữ",
+      "chucvu": "pp",
+      "phongban": "qtkd",
+      "chuyennganh": "kh",
+      "hocvan": ""
+    },
+    {
+      "id": "012222",
+      "name": "Võ Nguyên Hào",
+      "birthday": "2023-06-05",
+      "chucvu": "pp",
+      "phongban": "cntt",
+      "chuyennganh": "dientu",
+      "hocvan": "ts",
+      "gender": "Nam"
+    },
+    {
+      "id": "1223",
+      "name": "Võ Nguyên Hào",
+      "birthday": "2023-06-05",
+      "chucvu": "pp",
+      "phongban": "cntt",
+      "chuyennganh": "dientu",
+      "hocvan": "ts",
+      "gender": "Nam"
+    }
+  ],
+  "phong-ban": [
+    {
+      "id": 1,
+      "name": "CNTT",
+      "sdt": "0377116163",
+      "diachi": "Tang 10"
+    },
+    {
+      "id": "12",
+      "name": "QTKD"
+    },
+    {
+      "id": "admin",
+      "name": "đă",
+      "sdt": "đă",
+      "diachi": "đă"
+    },
+    {
+      "id": "123",
+      "name": "213",
+      "sdt": "321",
+      "diachi": "321"
+    },
+    {
+      "id": "3321",
+      "name": "321",
+      "sdt": "321",
+      "diachi": "321"
+    },
+    {
+      "id": "02",
+      "name": "KKQN",
+      "sdt": "051321",
+      "diachi": "t0"
+    }
+  ]
+}

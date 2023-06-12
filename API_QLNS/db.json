@@ -1,0 +1,156 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "nhan-vien": [
+    {
+      "id": "01",
+      "name": "Võ Nguyên Hào",
+      "birthday": "2023-06-05",
+      "gender": "Nam",
+      "chucvu": "pp",
+      "phongban": "cntt",
+      "chuyennganh": "dientu",
+      "hocvan": "ts"
+    },
+    {
+      "id": "02",
+      "name": "Hao",
+      "birthday": "2023-06-08",
+      "gender": "Nam",
+      "chucvu": "nv",
+      "phongban": "cntt",
+      "chuyennganh": "cntt",
+      "hocvan": "dh"
+    },
+    {
+      "id": "03",
+      "name": "Thái An",
+      "birthday": "2023-06-21",
+      "gender": "Khác",
+      "chucvu": "nv",
+      "phongban": "cntt",
+      "chuyennganh": "cntt",
+      "hocvan": "dh"
+    },
+    {
+      "id": "04",
+      "name": "Đức Huy",
+      "birthday": "2023-06-19",
+      "gender": "Nữ",
+      "chucvu": "pp",
+      "phongban": "qtkd",
+      "chuyennganh": "kh",
+      "hocvan": ""
+    },
+    {
+      "id": "012222",
+      "name": "Võ Nguyên Hào",
+      "birthday": "2023-06-05",
+      "chucvu": "pp",
+      "phongban": "cntt",
+      "chuyennganh": "dientu",
+      "hocvan": "ts",
+      "gender": "Nam"
+    },
+    {
+      "id": "FS9SlGW",
+      "name": "",
+      "birthday": "",
+      "gender": "",
+      "chucvu": "",
+      "phongban": "",
+      "chuyennganh": "",
+      "hocvan": ""
+    },
+    {
+      "id": "USkuhB3",
+      "name": "",
+      "birthday": 200000,
+      "gender": "",
+      "chucvu": "",
+      "phongban": "",
+      "chuyennganh": "",
+      "hocvan": ""
+    },
+    {
+      "id": "222",
+      "name": "22",
+      "birthday": "2023-06-06",
+      "gender": "Nam",
+      "chucvu": "",
+      "phongban": "",
+      "chuyennganh": "",
+      "hocvan": "",
+      "luong": "2222"
+    },
+    {
+      "id": "nguyenhao",
+      "name": "Hao",
+      "birthday": "",
+      "gender": "Nam",
+      "chucvu": "pp",
+      "phongban": "qtkd",
+      "chuyennganh": "kho",
+      "hocvan": "ts",
+      "luong": 2222
+    },
+    {
+      "id": "3",
+      "name": "",
+      "birthday": "",
+      "gender": "",
+      "chucvu": "",
+      "phongban": "",
+      "chuyennganh": "",
+      "hocvan": "",
+      "luong": ""
+    },
+    {
+      "id": "0111",
+      "name": "Võ Nguyên Hàoaa",
+      "birthday": "",
+      "gender": "",
+      "chucvu": "",
+      "phongban": "",
+      "chuyennganh": "",
+      "hocvan": "",
+      "luong": 200,
+      "tongluong": "22222"
+    }
+  ],
+  "phong-ban": [
+    {
+      "id": "fba",
+      "name": "Quản Trị Kinh Doanh",
+      "sdt": "031745153",
+      "diachi": "t8"
+    },
+    {
+      "id": "IT",
+      "name": "Công nghệ thông tin",
+      "sdt": "0034651",
+      "diachi": "t110"
+    }
+  ],
+  "user": [
+    {
+      "username": "admin",
+      "password": "admin"
+    }
+  ]
+}

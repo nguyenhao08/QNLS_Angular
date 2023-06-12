@@ -19,34 +19,38 @@ import { AddpbComponent } from './admin/phongban/edit/addpb/addpb.component';
 import { EditpbComponent } from './admin/phongban/edit/editpb/editpb.component';
 import { ViewComponent } from './admin/nhanvien/edit/view/view.component';
 import { ViewpbComponent } from './admin/phongban/edit/viewpb/viewpb.component';
+import { TinhluongComponent } from './admin/quanlyluong/tinhluong/tinhluong/tinhluong.component';
+import { FormsModule } from '@angular/forms';
+import { EditluongComponent } from './admin/quanlyluong/editluong/editluong/editluong.component';
 
 @NgModule({
   declarations: [
-   
-        HomeComponent,
-        LoginComponent,
-        HomeimgComponent,
-        NotfoundComponent,
-        AdminComponent,
-        AdminpageComponent,
-        NhanvienComponent,
-        PhongbanComponent,
-        QuanlyluongComponent,
-        AddComponent,
-        EditComponent,
-        AddpbComponent,
-        EditpbComponent,
-        ViewComponent,
-        ViewpbComponent,
-        
+    HomeComponent,
+    LoginComponent,
+    HomeimgComponent,
+    NotfoundComponent,
+    AdminComponent,
+    AdminpageComponent,
+    NhanvienComponent,
+    PhongbanComponent,
+    QuanlyluongComponent,
+    AddComponent,
+    EditComponent,
+    AddpbComponent,
+    EditpbComponent,
+    ViewComponent,
+    ViewpbComponent,
+    TinhluongComponent,
+    EditluongComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [],
-  bootstrap: [HomeComponent]
+  bootstrap: [HomeComponent],
 })
-export class AppModule { }
+export class AppModule {}

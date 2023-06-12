@@ -14,28 +14,30 @@ import { AddpbComponent } from './admin/phongban/edit/addpb/addpb.component';
 import { EditpbComponent } from './admin/phongban/edit/editpb/editpb.component';
 import { ViewComponent } from './admin/nhanvien/edit/view/view.component';
 import { ViewpbComponent } from './admin/phongban/edit/viewpb/viewpb.component';
+import { TinhluongComponent } from './admin/quanlyluong/tinhluong/tinhluong/tinhluong.component';
+import { EditluongComponent } from './admin/quanlyluong/editluong/editluong/editluong.component';
 
 const routes: Routes = [
-  {path:'', component:HomeimgComponent},
-  {path:'dang-nhap', component:LoginComponent},
-  {path:'Admin',component:AdminComponent},
-  {path:'adminpage',component:AdminpageComponent},
-  {path:'nhan-vien',component:NhanvienComponent},
-  {path:'phong-ban',component:PhongbanComponent},
-  {path:'luong',component:QuanlyluongComponent},
-  {path:'nhan-vien/add',component:AddComponent},
-  {path:'nhan-vien/edit/:id',component:EditComponent},
-  {path:'nhan-vien/view/:id',component:ViewComponent},
-  {path:'phong-ban/add', component:AddpbComponent },
-  {path:'phong-ban/edit', component:EditpbComponent },
-  {path:'phong-ban/view', component:ViewpbComponent },
- 
-  {path:'**', component:NotfoundComponent},
-
+  { path: '', component: HomeimgComponent },
+  { path: 'dang-nhap', component: LoginComponent },
+  { path: 'Admin', component: AdminComponent },
+  { path: 'adminpage', component: AdminpageComponent },
+  { path: 'nhan-vien', component: NhanvienComponent },
+  { path: 'phong-ban', component: PhongbanComponent },
+  { path: 'luong', component: QuanlyluongComponent },
+  { path: 'nhan-vien/add', component: AddComponent },
+  { path: 'nhan-vien/edit/:id', component: EditComponent },
+  { path: 'nhan-vien/view/:id', component: ViewComponent },
+  { path: 'phong-ban/add', component: AddpbComponent },
+  { path: 'phong-ban/edit', component: EditpbComponent },
+  { path: 'phong-ban/view', component: ViewpbComponent },
+  { path: 'luong/tinh-luong/:id', component: TinhluongComponent },
+  { path: 'luong/edit-luong/:id', component: EditluongComponent },
+  { path: '**', component: NotfoundComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
